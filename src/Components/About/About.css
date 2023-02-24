@@ -1,0 +1,144 @@
+#about {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  padding: 4rem 1.7rem;
+  background-color: #CBE5FA;
+}
+
+.video2 {
+  margin-top: -10%;
+}
+
+.img {
+  height: 250px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.h1 {
+  color: #29557e;
+}
+
+.p1 {
+  font-style: oblique;
+  margin-top: 5%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #29557e;
+  font-size: 1.2rem;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 10%;
+}
+
+.cardset {
+  box-shadow: 0px 25px 30px -15px #29557e;
+  border-radius: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background-color: #29557e;
+  margin-bottom: 25px;
+}
+
+.cardset h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.cardset ul {
+  list-style: none;
+  margin: 2%;
+  padding: 0;
+}
+
+.cardset ul li {
+  line-height: 1.7;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.cardset:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+
+.cardset:hover:before {
+  opacity: 1;
+}
+
+.cardset ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #CBE5FA;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+
+@media screen and (min-width: 576px) {
+  #about {
+    padding: 6rem 1.7rem;
+  }
+
+  .card-list {
+    padding-top: 15%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #about {
+    padding: 8rem 1.7rem;
+  }
+
+  .cardset {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about {
+    padding: 10rem 1.7rem;
+  }
+
+  .cardset {
+    width: calc(33.333% - 20px);
+  }
+}
+
+/* @media screen and (min-width: 992px) {
+  .cardset {
+    width: calc(25% - 20px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cardset {
+    width: calc(20% - 20px);
+  }
+} */

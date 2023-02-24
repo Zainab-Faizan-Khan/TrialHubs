@@ -1,0 +1,112 @@
+#mainConatiner {
+    background-color: #29557e;
+    height: 30px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+  
+  .phone {
+    position: relative;
+    height: 30px;
+    background-color: #29557e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -4.5%;
+    margin-right: -9%;
+    margin-left: 0.5%;
+  }
+  
+  .phoneIcon {
+    height: 25px;
+  }
+  
+  .phone p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .email {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 220px;
+    height: 30px;
+    background-color: #29557e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -4.5%;
+    margin-right: 0.5%;
+  }
+  
+  .email p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .open p {
+    font-size: 1rem;
+    color: rgb(255, 254, 254);
+    font-style: italic;
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .phone {
+      width: 80px;
+      height: 80px;
+      font-size: 14px;
+    }
+  
+    .email {
+      width: 150px;
+      height: 80px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .phone {
+      width: 60px;
+      height: 60px;
+      font-size: 12px;
+    }
+  
+    .email {
+      width: 120px;
+      height: 60px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .phone {
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+    }
+  
+    .email {
+      width: 80px;
+      height: 40px;
+      font-size: 10px;
+    }
+  }
